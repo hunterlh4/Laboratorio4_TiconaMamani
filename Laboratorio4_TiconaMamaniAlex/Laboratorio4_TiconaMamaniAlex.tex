@@ -1,0 +1,185 @@
+\documentclass[12pt,a4paper]{book}
+ \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} \begin{document}
+\thispagestyle{empty}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+ {\centering
+  
+ \begin{figure}[htb] \centering
+
+\includegraphics[scale=1]{Imagenes/upt.jpg}
+ \end{figure}
+
+
+\large{\bf UNIVERSIDAD PRIVADA DE TACNA}\\ \vspace{0.5cm}
+\large{\bf FACULTAD DE INGENIERIA }\\ \vspace{0.5cm}
+
+\large{\bf Escuela Profesional de Ingeniería de Sistemas } \\ \vspace{1cm}
+
+{\large {\bf Laboratorio 4 - Unidad I }}\\ \vspace{1cm}
+
+{\large {\bf “ELABORACION DE DASHBOARDS EN POWER BI” }}\\ \vspace{2cm} 
+
+\large Curso: INTELIGENCIA DE NEGOCIOS\\ \vspace{1.5cm}
+\large Docente: Ing. Patrick Cuadros Quiroga \\ \vspace{1.5cm}
+\large Ticona Mamani, Alex Armando (2017057860) \\ \vspace{4cm}
+\vspace{0.5cm} {\Large {\bf \textsc{Tacna - Perú} }}\\ {\Large {\bf \textsc{2019}}} \\}
+
+
+
+\begin{center}
+
+
+
+\section*{ \\ PRACTICA DE LABORATORIO 04: \\ CREANDO UN REPORTE INTERACTIVO EN POWER BI } 
+\end{center}
+
+\hfill \break
+
+\subsubsection*{1.	REQUERIMIENTOS}
+
+\begin{itemize}
+\item Conocimientos \\
+
+Para el desarrollo de esta práctica se requerirá de los siguientes conocimientos básicos:
+
+\begin{itemize}
+\item Conocimientos básicos de administración de base de datos Microsoft SQL Server.
+\item Conocimientos básicos de SQL.
+
+\end{itemize}
+
+\item software 
+Asimismo, se necesita los siguientes aplicativos:
+
+\begin{itemize}
+
+\item Microsoft SQL Server 2016 o superior
+
+\item Base de datos AdventureWorksLT2016 o superior
+
+\item Tener los archivos de recursos del laboratorio.
+
+\item Power BI Desktop.
+
+\item Tener una cuenta Microsoft registrada en el Portal de Power Bi.
+
+
+\end{itemize}
+
+\end{itemize}
+
+
+
+
+
+\subsubsection*{2.	CONSIDERACIONES INICIALES}
+
+Microsoft Power BI es un conjunto de aplicaciones para el an´alisis empresarial, que permite unificar diferentes fuentes de datos, configura y analiza datos que son presentados de manera sencilla en tablas e informes, que pueden ser consultados de una manera muy f´acil y atractiva en tiempo real por usuarios e integrantes de una misma empresa u organizacion
+
+\subsection*{Desarollo\\}
+Paso 1: Para esta gu´ıa utilizaremos el cubo creado en la gu´ıa anterior. Inicie Power BI Desktop, busque y seleccione la opci´on Get Data \\
+Paso 2: Dentro de los resources seleccionaremos SQL Server Analysis Services database.\\
+
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img1.png}
+\end{center}
+Paso 3: Utilice el nombre de host o localhost para conectarse
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img12.png}
+\end{center}
+Vamos a seleccionar Adveture Works DW2017. Nota aclaratoria: Debe utilizar el cubo de datos que se gener´o en las gu´ıas anteriores.
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img3.png}
+\end{center}
+Paso 4: Una vez conectado tendremos en nuestro lado dos toolbox, uno denominado VISUALIZA- TONS y otro denominado FIELDS. En FIELDS debe mostrar la Fact Table de Internet Sales y las dimensiones asociadas segu´n las gu´ıas previas de cubos.
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img4.png}
+\end{center}
+Paso 5: Vamos a crear nuestro primer reporte. Seleccionaremos una gr´afica de barras, en segundo lugar Sales Amount, Calendar Year y English Product Name. (Debe hacerlo en ese orden).
+\begin{center}
+\includegraphics[width=6cm]{Imagenes/img5.png}
+\end{center}
+La grafica resultante es la siguiente:
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img6.png}
+\end{center}
+Paso 7: Elimine la gr´afica anterior y proceder´a a seleccionar gr´afica de barras, en segundo lugar Sales Amount, English Product Name y Calendar Year. (Debe hacerlo en ese orden).
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img7.png}
+\end{center}
+La grafica cambiara, lo que indica que el orden de agregado es importante para las visualizaciones, aun habiendo seleccionado los mismos datos.
+Paso 8: Cree un nuevo reporte. Podemos crear un dashboard con gr´aficos simult´aneos. Arrastre dos gr´aficas y seleccione una de ella para establecer las propiedades.
+
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img8.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img9.png}
+\end{center}
+Paso 10: Seleccione una de los valores de la gr´afica de la izquierda para ver el comportamiento:
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img10.png}
+\end{center}
+Paso 11: Ahora crearemos un mapa que muestre la proporci´on de ventas por zona geogr´afica. Arrastre un Mapa y una tabla
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img11.png}
+\end{center}
+Paso 12: Ahora generaremos una gr´afica de a´rea. En primer lugar seleccione una nueva p´agina y agregue una gr´afica de a´rea. Luego seleccione las medidas que se van a mostrar en el gr´afico:
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img12.png}
+\end{center}
+Ordene el resultado por an˜o de manera ascendente
+\begin{center}
+\includegraphics[width=10cm]{Imagenes/img13.png}
+\end{center}
+Paso 13: Agregaremos una gr´afica de l´ıneas. Vamos a seleccionar desde la tabla de hecho a Sales Amount. A continuaci´on agregaremos Calendar Year desde Order Date y luego English Country Region Name. Debe realizarse en este orden o el resultado ser´a diferente.
+\begin{center}
+\includegraphics[width=10cm]{Imagenes/img14.png}
+\end{center}
+Paso 14: Puede definir los nombres de las hojas para indicar el tipo de reporte y la informaci´on. Establezca nombres descriptivos segu´n la informaci´on que usted quiere facilitar.
+\begin{center}
+\includegraphics[width=10cm]{Imagenes/img15.png}
+\end{center}
+Paso 15: Crearemos un reporte (gr´afico de barras) con filtrado b´asico. Seleccionar Sales Amount, English Country Region Name y Order date/Calendar Year. Buscar´a la secci´on Basic Filtering y marcar´a Canada / United Kingdom.
+\begin{center}
+\includegraphics[width=10cm]{Imagenes/img16.png}
+\end{center}
+Paso 16: La siguiente gr´afica es una Stacked Column Chart. Los atributos que utilizaremos son Sales Amount vs English ProductName vs Order Date/Calendar Year
+\begin{center}
+\includegraphics[width=10cm]{Imagenes/img17.png}
+\end{center}
+Ahora incluya un filtro. Buscaremos productos que hayan vendido arriba de los 400 000
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img18.png}
+\end{center}
+Paso 17: Incluya un Table con los siguientes campos: Sales Amount, English Product Name y Calendar Year Seleccione Show Data
+\begin{center}
+\includegraphics[width=12cm]{Imagenes/img19.png}
+\end{center}
+Podra visualizar el detalle de ventas
+Paso 18: Cambie la orientaci´on del reporte:
+\begin{center}
+\includegraphics[width=8cm]{Imagenes/img20.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=8cm]{Imagenes/img21.png}
+\end{center}
+Paso 19: Exporte su reporte para visualizaci´on
+\begin{center}
+\includegraphics[width=5cm]{Imagenes/img22.png}
+\end{center}
+
+
+
+\end{document}
